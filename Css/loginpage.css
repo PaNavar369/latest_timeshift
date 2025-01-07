@@ -1,0 +1,318 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Time Selector Container */
+.time-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between elements */
+    margin: 16px 0; /* Top and bottom spacing */
+    font-family: Arial, sans-serif;
+}
+
+/* Label */
+.time-selector label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Time Input */
+.time-selector input[type="time"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.time-selector input[type="time"]:focus {
+    border-color: #007BFF;
+}
+
+/* Button */
+.time-selector button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.time-selector button:hover {
+    background-color: #0056b3;
+}
+
+
+   
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 20px 0 0 20px;
+}
+.search-bar button {
+    background-color: #0056b3;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search-bar button:hover {
+    background-color: #003f7f;
+}
+
+/* Logout Button */
+.logout {
+    background-color: #FF4D4D; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover Effect */
+.logout:hover {
+    background-color: #E60000; 
+}
+
+/* Focus Effect */
+.logout:focus {
+    outline: none; 
+    box-shadow: 0 0 4px rgba(255, 77, 77, 0.75); 
+}
+
+
+
+   /* main  content */
+
+  /* General Reset */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* News Container */
+
+/* Individual News Item */
+
+
+/* News Card */
+.news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+}
+
+/* News Image */
+.news-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* News Content */
+.news-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.news-content h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.news-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.news-content a.read-more {
+    margin-top: auto; /* Push link to bottom */
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.news-content a.read-more:hover {
+    color: #0056b3;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+/* Styling for individual news items */
+.news-item {
+    flex: 1 1 calc(25% - 32px);
+    max-width: calc(25% - 32px);
+    box-sizing: border-box;
+}
+
+.news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.news-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.news-content h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.news-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.news-content a.read-more {
+    margin-top: auto;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 720px){
+
+}
+
+@media (max-width: 480px) { /* for mobile view*/
+    body{
+        width: 100vw;
+    }
+    header {
+        /* flex-wrap: wrap; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 1%;
+    }
+
+    .logo{
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+    }
+    .time-selector {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-grow: 1;
+    }
+    .nav{
+        width: 100%;
+        flex-grow: 2;
+        display: flex;
+        margin-top: 1%;
+        margin-bottom: 1%;
+}
+    }
+    .search{
+        width: 100%;
+        display: flex;
+        gap: 2%;
+        justify-content: space-evenly;
+    }
+    .search-bar input{
+        width: 80%;
+    }
+    .search form{
+        flex-grow: 2;
+    }
+
+    .time-selector {
+        margin-bottom: 0;
+    }
+     .news-item {
+        flex: 1 1 100%;    /* 1 card per row */
+        max-width: 100%;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .news-content h2 {
+        font-size: 1rem;
+    }
+
+    .read-more {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    .logout{
+        flex-grow: 1;
+    }
+
+
+    
